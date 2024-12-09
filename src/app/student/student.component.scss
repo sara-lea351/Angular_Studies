@@ -1,0 +1,14 @@
+ul {
+    list-style-type: none; /* מסיר את הסימנים של הרשימה */
+    padding: 0; /* מסיר רווחים פנימיים */
+    margin: 0; /* מסיר רווחים חיצוניים */
+}
+
+li {
+    background-color: #e67272; /* צבע רקע לרשומות */
+    border: 1px solid #773030; /* גבול לרשומות */
+    padding: 10px; /* רווח פנימי */
+    margin-bottom: 5px; /* רווח בין רשומות */
+    border-radius: 5px; /* פינות מעוגלות */
+    font-family: Arial, sans-serif; /* גופן לרשומות */
+}
