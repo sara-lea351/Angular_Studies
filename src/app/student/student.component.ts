@@ -9,4 +9,9 @@ import { Student } from '../student.model';
 export class StudentComponent {
 
   students: Student[] = [{name: "Sara Cohen", age: 20},{name: "Lea Levi", age: 19},{name: "Naomi Koler", age: 18}]
+
+  deleteStudent(student: Student){
+    let indexOfStudent = this.students.indexOf(student);
+    this.students.splice(indexOfStudent,1)
+  }
 }

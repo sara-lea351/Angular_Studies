@@ -1,14 +1,25 @@
 ul {
-    list-style-type: none; /* מסיר את הסימנים של הרשימה */
-    padding: 0; /* מסיר רווחים פנימיים */
-    margin: 0; /* מסיר רווחים חיצוניים */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    
 }
 
 li {
-    background-color: #e67272; /* צבע רקע לרשומות */
-    border: 1px solid #773030; /* גבול לרשומות */
-    padding: 10px; /* רווח פנימי */
-    margin-bottom: 5px; /* רווח בין רשומות */
-    border-radius: 5px; /* פינות מעוגלות */
-    font-family: Arial, sans-serif; /* גופן לרשומות */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border-radius: 7px; 
+    font-family: Arial, sans-serif; 
+    max-width: 400px; /* הגבלת רוחב */
+    word-wrap: break-word; /* מאפשר חיתוך מילים */
+    margin-left: 38%;
+}
+
+button {
+    margin-left: auto; 
 }
