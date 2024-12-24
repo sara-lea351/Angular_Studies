@@ -1,0 +1,16 @@
+.student-details {
+    background-color: #f0f8ff; /* צבע רקע בהיר */
+    border: 1px solid #007bff; /* גבול כחול */
+    border-radius: 8px; /* פינות מעוגלות */
+    padding: 15px; /* רווח פנימי */
+    font-family: Arial, sans-serif; /* גופן */
+    color: #333; /* צבע טקסט */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* צל */
+    transition: transform 0.2s; /* אנימציה */
+    max-width: 450px; /* גבול רוחב מקסימלי */
+    margin: 0 auto; /* מרכז את הדיב בעמוד */
+}
+
+.student-details:hover {
+    transform: scale(1.02); /* הגדלה קלה בעת ריחוף */
+}

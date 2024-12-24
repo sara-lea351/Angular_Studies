@@ -14,4 +14,10 @@ export class StudentComponent {
     let indexOfStudent = this.students.indexOf(student);
     this.students.splice(indexOfStudent,1)
   }
+
+  studentToShow?: Student;
+
+  showStudentDetails(student: Student){
+    this.studentToShow = student
+  }
 }
