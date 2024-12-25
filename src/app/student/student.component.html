@@ -1,5 +1,5 @@
 <ul>
-    <li *ngFor="let student of students">
+    <li *ngFor="let student of students" [ngClass]="{'active': student.name == studentToShow?.name}">
         {{student.name}}         
         <button (click)="showStudentDetails(student)">Student Details</button>
         <button (click)="deleteStudent(student)">Delete Student</button>
@@ -7,4 +7,6 @@
     </li>
 </ul>
 
-<app-student-details [student] = 'studentToShow'></app-student-details>
+<button class="btn btn-primary" (click)="showNewStudentDetails()">Add New Student</button>
+
+<app-student-details [student] = 'studentToShow' (onSaveNewStudent)="addNewStudent($event)"></app-student-details>

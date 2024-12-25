@@ -20,7 +20,28 @@ li {
     margin-left: 38%;
 }
 
+// button {
+//     margin-left: auto; 
+// }
+
 button {
     margin-left: auto; 
+    background-color: #e2b87c; /* צבע רקע  */
+    color: white; /* צבע טקסט לבן */
+    border: none; /* ללא גבול */
+    border-radius: 5px; /* פינות מעוגלות */
+    padding: 8px 15px; /* רווח פנימי */
+    font-size: 16px; /* גודל גופן */
+    cursor: pointer; /* מחוון עכבר */
+    transition: background-color 0.3s, transform 0.2s; /* אנימציה */
 }
+
+button:hover {
+    background-color: #dfd1b2; /* צבע רקע כהה יותר בעת ריחוף */
+    transform: scale(1.05); /* הגדלה קלה בעת ריחוף */
+}
+.active{
+    background-color: rgb(167, 184, 182);
+}
+
 

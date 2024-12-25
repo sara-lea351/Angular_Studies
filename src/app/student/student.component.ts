@@ -20,4 +20,14 @@ export class StudentComponent {
   showStudentDetails(student: Student){
     this.studentToShow = student
   }
+
+  showNewStudentDetails(){
+    this.studentToShow = new Student("New Student", 20)
+  }
+
+  addNewStudent(studentToAdd: Student){
+    this.students.push(studentToAdd);
+    this.studentToShow = undefined;
+    
+  }
 }

@@ -1,3 +1,9 @@
 <div *ngIf ="student" class="student-details">
-    {{student.name}}, {{student.age}}
+    <div class="from-group">
+        <label for="name">Student Name</label>
+        <input type="text" class="form-control" id="name" [value]="student.name">
+    </div>
+
+    <button class="btn btn-primary" (click)="saveNewStudent()">Save</button>
+    <!-- {{student.name}}, {{student.age}} -->
 </div>
